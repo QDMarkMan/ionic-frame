@@ -1,0 +1,19 @@
+<!-- Generated template for the BacktopComponent component -->
+<div>
+  <div class="backtop">
+    <p (click)="click()">back</p>
+    father数据: {{child}}
+    <div>
+      拦截father: {{showContent}}
+    </div>
+    <div *ngIf="show">
+      显示
+    </div>
+    <div>
+      servicedata： {{missionService.familyData}}
+    </div>
+    <div>
+      service订阅：{{text}}
+    </div>
+  </div>
+</div>

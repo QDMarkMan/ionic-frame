@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="slide-wrap">
+    <ion-slides pager autoplay="2000" loop="true">
+      <ion-slide class="slide-img">
+        <div class="slide-mask">Slide 1</div>
+      </ion-slide>
+      <ion-slide class="slide-img" style="background-color: blue">
+          <div class="slide-mask">Slide 2</div>
+      </ion-slide>
+      <ion-slide class="slide-img" style="background-color: red">
+          <div class="slide-mask">Slide 3</div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <h4>青岛市商务统计快报</h4>
+  <p [modaltitle]="'cyan'">测试自定义属性指令</p>  
+  <ion-grid>
+    <ion-row class="href-content">
+      <ion-col class="href-wrap bg-red">
+        <p class="title text-center">
+          对外贸易
+        </p>
+        <p class="time text-center">
+          2018年9月
+        </p>
+      </ion-col>
+      <ion-col class="href-wrap bg-green">
+          <p class="title text-center">
+            服务外包
+          </p>
+          <p class="time text-center">
+            2018年9月
+          </p>
+        </ion-col>
+    </ion-row>
+    <ion-row class="href-content">
+        <ion-col class="href-wrap bg-blue">
+          <p class="title text-center">
+            外商直接投资
+          </p>
+          <p class="time text-center">
+            2018年9月
+          </p>
+        </ion-col>
+        <ion-col class="href-wrap bg-yellow">
+            <p class="title text-center">
+              商贸流通
+            </p>
+            <p class="time text-center">
+              2018年9月
+            </p>
+          </ion-col>
+      </ion-row>
+      <ion-row class="href-content">
+          <ion-col class="href-wrap bg-purple">
+            <p class="title text-center">
+              对外经济投资与合作
+            </p>
+            <p class="time text-center">
+              2018年9月
+            </p>
+          </ion-col>
+          <ion-col class="href-wrap bg-indigo">
+              <p class="title text-center">
+                总部经济
+              </p>
+              <p class="time text-center">
+                2018年9月
+              </p>
+            </ion-col>
+        </ion-row>
+  </ion-grid>
+  <!--  -->
+</ion-content>

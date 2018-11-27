@@ -1,0 +1,64 @@
+@import "../../theme/util";
+
+.slide-wrap{
+  height: 20rem;
+  .slide-img{
+    position: relative;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/imgs/logo.png');
+    .slide-mask{
+      position: absolute;
+      text-indent: 2px;
+      right: 0;
+      left: 0;
+      height: 4rem;
+      background-color: rgba(0, 0, 0, 0.3);
+      bottom: 0;
+      text-align: left;
+    }
+  }
+  .swiper-pagination{
+    text-align: right;
+  }
+}
+$bg:(
+  redcolor:    #f04b2f,
+  greencolor:  #81b91e,
+  bluecolor:   #27a4ed,
+  yellowcolor: #fbba28,
+  purplecolor: #623bb7,
+  indigocolor: #48a54a
+);
+.href-wrap {
+  padding: 2.8rem 0; 
+  border-radius: 1rem;
+  color: #ffffff;
+  margin-top: .5rem;
+};
+.bg-red{
+  background-color: #f04b2f;
+};
+.bg-green{
+  background-color: #81b91e;
+};
+.bg-blue{
+  background-color: #27a4ed;
+};
+.bg-yellow{
+  background-color: #fbba28;
+};
+.bg-purple{
+  background-color: #623bb7;
+};
+.bg-indigo{
+  background-color: #48a54a;
+};
+// 奇数
+.href-wrap:nth-child(odd) {
+  margin-right: .5rem;
+}
+// 偶数
+.href-wrap:nth-child(even) {
+  margin-left: .5rem;
+}

@@ -1,0 +1,21 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>news</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <section class="news-content">
+    新闻
+  </section>
+  {{missionService.familyData}}
+  <div>
+    通过Event获取的信息：{{messgeByEvent}}
+  </div>
+  <button ion-button color="secondary" full  (click)="emitByService()">通过service发布信息</button>
+  <button ion-button color="secondary" full  (click)="childComponent.fromFather()">测试本地变量</button>
+  
+  <backtop #childComponent [child]="father" [showContent] = "father" (changeChild)="childCome($event)"></backtop>
+</ion-content>

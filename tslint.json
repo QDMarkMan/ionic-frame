@@ -1,0 +1,36 @@
+{
+  "rules": {
+    "no-trailing-whitespace": false, //尾部空格检测
+    "no-var-keyword": true,
+    "no-duplicate-variable": true,
+    "no-use-before-declare": true, // 先定义再使用
+    "no-duplicate-super": true, // 禁止多次使用super
+    "no-return-await": true, // 禁止没必要得return await
+    "no-sparse-arrays": true, // 禁止数组中连续逗号
+    "no-switch-case-fall-through": true, // switch 的 case 必须 return 或 break
+    "deprecation": true, // 禁止使用废弃API
+    /* "semicolon": [ // 行尾必须有分号
+      true,
+      "always",
+      "ignore-interfaces"
+    ], */
+    // 禁止 finally 内出现 return, continue, break, throw 等
+    // finally 会比 catch 先执行
+    "no-unsafe-finally": true,
+    "no-consecutive-blank-lines": [ // 禁止超过连续3行的空格
+      true,
+      3
+    ],
+    "no-empty": [ // 禁止无用代码块
+      true,
+      "allow-empty-catch"
+    ],
+    "triple-equals": true, // 严格相等
+    "no-unused-variable": [
+      true
+    ]
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-eslint-rules/dist/rules"
+  ]
+}
